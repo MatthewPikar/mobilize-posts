@@ -14,11 +14,11 @@ for(var i= 2, len=process.argv.length; i<len; i++){
 _.extend(options, {
     resourceName: 'posts',
     resourceFormat: {
-        required$: ['sourceId','title'],
-        only$: ['id','sourceId','title','date','content'],
+        required$: ['sourceId','name'],
+        only$: ['id','sourceId','name','date','content'],
         id: 'string$',
         sourceId: 'string$',
-        title: 'string$',
+        name: 'string$',
         date: 'string$',
         content: 'string$'
     }
