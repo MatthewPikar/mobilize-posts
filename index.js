@@ -15,10 +15,12 @@ _.extend(options, {
     resourceName: 'posts',
     resourceFormat: {
         required$: ['sourceId','name'],
-        only$: ['id','sourceId','name','date','content'],
+        only$: ['id','sourceId','name','created','modified','date','content'],
         id: 'string$',
         sourceId: 'string$',
         name: 'string$',
+        created: 'string$',
+        modified: 'string$',
         date: 'string$',
         content: 'string$'
     }
